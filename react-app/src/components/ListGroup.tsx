@@ -8,15 +8,13 @@ function ListGroup() {
     "Tasmania",
   ];
 
-  items = [];
-
   return (
     <>
       <h1>List</h1>
       {items.length === 0 && "No items found"}
       <ul className="list-group">
         {items.map((item) => (
-          <li className="list-group-item" key={item}>{item}</li>
+          <li className="list-group-item" key={item} onClick={()=> console.log("Button is clicked")}>{item}</li>
         ))}
       </ul>
     </>
