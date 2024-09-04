@@ -11,8 +11,12 @@ function App() {
     "Tasmania",
   ];
 
+  const handlSelectItem = (item: string) => {
+    console.log(item);
+  }
 
-  return <ListGroup items = {items} heading="List"/>;
+
+  return <ListGroup items = {items} heading="List" onSelectItem={handlSelectItem}/>;
 }
 
 export default App;
